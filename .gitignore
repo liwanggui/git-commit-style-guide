@@ -1,0 +1,10 @@
+.idea/
+.DS_Store
+npm-debug.log
+Desktop.ini
+$RECYCLE.BIN/
+.directory
+.vscode/
+dist/
+node_modules/
+package-lock.json
