@@ -32,7 +32,7 @@ install_commit_style () {
 
     npm list -g | grep -q commitizen || npm install -g commitizen 
     npm list -g | grep -q conventional-changelog-cli || npm install -g conventional-changelog-cli
-    
+
     npm install
 }
 
@@ -44,7 +44,7 @@ fi
 if [ $UID -ne 0 ]; then
     echo "error: run as root or use sudo"
     echo "example:"
-    echo "  $ curl -SsL ${url}/liwanggui/git-commit-style-guide/raw/master/install.sh | sudo bash"
+    echo "  $ curl -sfL ${BASE_URL}/liwanggui/git-commit-style-guide/raw/master/install.sh | sudo bash"
     exit 1
 fi
 
